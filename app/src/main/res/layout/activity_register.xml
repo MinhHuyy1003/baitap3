@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_activity"
+    android:background="@drawable/bg_register">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:paddingLeft="15dp"
+        android:shadowColor="#C8A8E9"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textColor="#C8A8E9"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <EditText
+        android:id="@+id/edt_fullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_background_edt"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Fullname"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_Gmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background_edt"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Gmail"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_fullname"
+        app:layout_constraintStart_toStartOf="@+id/edt_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fullname" />
+
+    <EditText
+        android:id="@+id/edt_UserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background_edt"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_Gmail"
+        app:layout_constraintStart_toStartOf="@+id/edt_Gmail"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Gmail" />
+
+    <EditText
+        android:id="@+id/edt_passWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background_edt"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:password="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_UserName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_UserName"
+        app:layout_constraintTop_toBottomOf="@+id/edt_UserName" />
+
+    <EditText
+        android:id="@+id/edt_confirm_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background_edt"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:password="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_passWord"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_passWord"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passWord" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F5BCBA"
+        android:fontFamily="@font/adlam_display"
+        android:text="Register"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_confirm_pass"
+        app:layout_constraintStart_toStartOf="@+id/edt_confirm_pass"
+        app:layout_constraintTop_toBottomOf="@+id/edt_confirm_pass" />
+
+    <TextView
+        android:id="@+id/tv_haveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an Account"
+        android:textColor="#C8A8E9"
+        app:layout_constraintEnd_toEndOf="@+id/bt_register"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/bt_register"
+        app:layout_constraintTop_toBottomOf="@+id/bt_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
